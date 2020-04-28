@@ -1,0 +1,28 @@
+# IDE
+.idea/
+.vscode/
+
+# NODE MODULES
+node_modules/
+
+# BUILD
+build
+
+# OS
+.DS_Store
+
+# SNAPSHOTS
+template/src/__tests__/__snapshots__/
+
+# LOGS
+lerna-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.changelog
+
+# OTHERS
+.npm/
+yarn.lock
+*.tgz
+my-app*
