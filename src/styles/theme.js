@@ -33,6 +33,7 @@ export const theme = {
 	regular: 400,
 	light: 300,
 	semiBold: 600,
+	bold: 700,
 
 	baseColor: '#718493',
 	secondary: '#3c4357',
@@ -70,7 +71,7 @@ export const Container = styled.div`
 `
 export const ContentWrapper = styled.div`
 	${clearFix};
-	padding-top: 70px;
+	padding-top: 64px;
 `
 
 // TYPOGRAPHY
