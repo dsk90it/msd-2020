@@ -31,6 +31,7 @@ export const theme = {
 	fontDefault: `'Open Sans', sans-serif`,
 
 	baseFontSize: '15px',
+	gutterWidth: '16px',
 
 	regular: 400,
 	light: 300,
@@ -74,17 +75,4 @@ export const Container = styled.div`
 export const ContentWrapper = styled.div`
 	${clearFix};
 	padding-top: 56px;
-`
-
-// TYPOGRAPHY
-export const MainHeading = styled.h1`
-	font-size: 30px;
-	color: ${theme.secondary};
-	line-height: 40px;
-	margin: 0 0 24px;
-
-	${sm} {
-		font-size: 32px;
-		line-height: 48px;
-	}
 `

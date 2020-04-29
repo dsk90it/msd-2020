@@ -3,7 +3,7 @@ import { theme, Container, listUnstyled, xs, sm, md } from './_theme'
 
 const darkNavbar = `
 	background-color: ${theme.secondary};
-	transition: all 0.3s;
+	transition: all 0.4s;
 
 	.logo {
 		color: ${theme.white};

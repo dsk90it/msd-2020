@@ -1,74 +1,17 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-import 'react-responsive-modal/styles.css'
-import '../styles/_popup.css'
-import { clearFix, cdnUrl, MainHeading, sm, lg, xs } from '../styles/_theme'
 import { Modal } from 'react-responsive-modal'
-import { SliderWrapper } from '../helpers/sliderWrapper'
+
+import { SliderWrapper } from '../helpers/slider_wrapper'
+
 import { Button } from './button'
 import ContactForm from './form'
 
-const HeroWrapper = styled.header`
-	${clearFix};
-	width: 100%;
-	padding-top: 56px;
-	margin-top: -56px;
-	height: 600px;
-	position: relative;
-	overflow: hidden;
+import 'react-responsive-modal/styles.css'
 
-	${lg} {
-		height: 720px;
-	}
-
-	.hero-slider {
-		margin-top: -56px;
-		height: 600px;
-
-		${lg} {
-			height: 720px;
-		}
-
-		.item {
-			display: block;
-			width: 100%;
-			height: 600px;
-			position: relative;
-			background-size: cover;
-			background-repeat: no-repeat;
-
-			${xs} {
-				background-position: 22% 0;
-			}
-
-			${lg} {
-				height: 720px;
-			}
-		}
-	}
-`
-
-const HeroContent = styled.div`
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 0;
-	width: 100%;
-	padding: 0 10%;
-	text-align: center;
-
-	${sm} {
-		padding: 0;
-		width: 480px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	p {
-		line-height: 24px;
-		margin-bottom: 64px;
-	}
-`
+import { HeroWrapper, HeroContent } from '../styles/_hero'
+import { MainHeading, MetaText } from '../styles/_typography'
+import { cdnUrl } from '../styles/_theme'
+import '../styles/_popup.css'
 
 const sliderImages = [
 	<div
@@ -107,8 +50,6 @@ class Hero extends Component {
 	}
 
 	render() {
-		const { open } = this.state
-
 		return (
 			<HeroWrapper>
 				<SliderWrapper
@@ -126,14 +67,14 @@ class Hero extends Component {
 				/>
 
 				<HeroContent>
-					<MainHeading className="regular">
+					<MainHeading weight="400">
 						Lorem ipsum dollor sit amet featured title here
 					</MainHeading>
 
-					<p>
+					<MetaText margin="0 0 64px">
 						Mauris placerat eleifend leo. Quisque sit amet est et spaien
 						Vestibulum erat wisi, condimentum sed, commodo vitae
-					</p>
+					</MetaText>
 
 					<Button btnPrimary onClick={this.onOpenModal}>
 						Call to Action
@@ -141,7 +82,7 @@ class Hero extends Component {
 
 					<Modal
 						classNames={{ modal: 'popup' }}
-						open={open}
+						open={this.state.open}
 						onClose={this.onCloseModal}
 						center
 					>

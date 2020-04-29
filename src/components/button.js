@@ -36,7 +36,7 @@ export const Button = styled.button`
 	user-select: none;
 	cursor: pointer;
 	padding: 14px 20px 15px;
-	transition: all 0.2s;
+	transition: all 0.4s;
 	line-height: 1;
 	outline: 0 none;
 	letter-spacing: 0.25px;

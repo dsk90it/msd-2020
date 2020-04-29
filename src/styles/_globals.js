@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
       display: block;
    }
    a, button {
-      transition: all 0.2s;
+      transition: all 0.4s;
    }
    a, a:hover, a:focus {
       text-decoration: none;
@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
    }
    b, strong, h1, h2, h3, h4, h5, h6 {
       font-weight: ${theme.semiBold};
+      color: ${theme.secondary};
    }
    .img-responsive{
       max-width: 100%;

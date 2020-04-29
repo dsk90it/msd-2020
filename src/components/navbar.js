@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Scroll from 'react-scroll'
+
 import {
 	NavWrapper,
 	HeaderLeft,
