@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react'
 import { Element } from 'react-scroll'
 
 // Styles
-import GlobalStyle from '../styles/globals'
-import { ContentWrapper, Container } from '../styles/theme'
+import GlobalStyle from '../styles/_globals'
+import { ContentWrapper, Container } from '../styles/_theme'
 
 // Helpers
 import { navScrollListener } from '../helpers/navScroll'
@@ -29,11 +29,11 @@ class Home extends Component {
 				<NavBar />
 
 				<ContentWrapper>
-					<Container>
-						<Element name="home">
-							<Hero />
-						</Element>
+					<Element name="home">
+						<Hero />
+					</Element>
 
+					<Container>
 						<Element name="services"></Element>
 
 						<Element name="team"></Element>

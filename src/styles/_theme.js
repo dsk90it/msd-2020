@@ -17,10 +17,12 @@ export const listUnstyled = `
   margin: 0;
   padding: 0;
 `
+// CDN URL
+export const cdnUrl = `//d3lf10b5gahyby.cloudfront.net/misc/senthil_assets/`
 
 // SPRITES
 export const iconSprites = `
-   background: url('//d3lf10b5gahyby.cloudfront.net/misc/senthil_assets/sprites.png') no-repeat;
+   background: url(${`${cdnUrl}sprites.png`}) no-repeat;
    background-size: 256px 295px;
 `
 
@@ -71,7 +73,7 @@ export const Container = styled.div`
 `
 export const ContentWrapper = styled.div`
 	${clearFix};
-	padding-top: 64px;
+	padding-top: 56px;
 `
 
 // TYPOGRAPHY
