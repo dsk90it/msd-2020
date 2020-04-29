@@ -6,7 +6,7 @@ export const MainHeading = styled.h1`
 	line-height: 40px;
 	margin: 0 0 24px;
 	font-weight: ${(props) => props.weight || null};
-	color: ${(props) => props.color || null};
+	color: ${(props) => props.txtcolor || null};
 
 	${sm} {
 		font-size: 32px;
@@ -14,14 +14,15 @@ export const MainHeading = styled.h1`
 	}
 `
 export const SubHeading = styled.h2`
-	font-size: 24px;
-	line-height: 36px;
+	font-size: 26px;
+	line-height: 40px;
 	margin: ${(props) => props.margin || '0 0 16px'};
-	color: ${(props) => props.color || null};
+	color: ${(props) => props.txtcolor || null};
+	font-weight: ${(props) => props.weight || null};
 `
 
 export const MetaText = styled.p`
 	line-height: 24px;
-	color: ${(props) => props.color || null};
+	color: ${(props) => props.txtcolor || null};
 	margin: ${(props) => props.margin || null};
 `

@@ -97,7 +97,7 @@ const Services = () => {
 	return (
 		<SectionWrapper>
 			<Container>
-				<TitleWrapper wrapperMargin={56} />
+				<TitleWrapper wrapperMargin={64} />
 
 				<ServiceRow>
 					{serviceData}

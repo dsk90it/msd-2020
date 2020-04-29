@@ -9,10 +9,14 @@ const TitelContainer = styled.div`
 	${clearFix};
 	width: 100%;
 	text-align: center;
-	margin: 0 auto ${(props) => props.wrapMargin || 40}px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: ${(props) => props.wrapMargin}px;
+	position: relative;
+	z-index: 2;
 
 	${sm} {
-		max-width: ${(props) => props.maximumWidth + 'px' || null};
+		max-width: ${(props) => props.maximumWidth}px;
 	}
 `
 
@@ -27,11 +31,11 @@ const TitleWrapper = ({
 }) => {
 	return (
 		<TitelContainer wrapMargin={wrapperMargin} maximumWidth={maxWidth}>
-			<SubHeading margin={'0'} as={mainTextTag} color={textColor}>
+			<SubHeading margin={'0'} as={mainTextTag} txtcolor={textColor}>
 				{mainText}
 			</SubHeading>
 
-			<MetaText margin={'12px 0 0'} as={subTextag} color={textColor}>
+			<MetaText margin={'12px 0 0'} as={subTextag} txtcolor={textColor}>
 				{subText}
 			</MetaText>
 		</TitelContainer>
@@ -39,7 +43,7 @@ const TitleWrapper = ({
 }
 
 TitleWrapper.defaultProps = {
-	wrapMargin: 40,
+	wrapperMargin: 40,
 	maxWidth: 480,
 	mainText: 'We provide great services',
 	mainTextTag: 'h2',
@@ -49,7 +53,7 @@ TitleWrapper.defaultProps = {
 }
 
 TitleWrapper.propTypes = {
-	wrapMargin: PropTypes.number,
+	wrapperMargin: PropTypes.number,
 	maxWidth: PropTypes.number,
 	mainText: PropTypes.string,
 	mainTextTag: PropTypes.string,

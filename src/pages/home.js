@@ -1,11 +1,15 @@
 import React, { Component, Fragment } from 'react'
 import { Element } from 'react-scroll'
+
 import GlobalStyle from '../styles/_globals'
-import { ContentWrapper, Container } from '../styles/_theme'
+import { ContentWrapper } from '../styles/_theme'
+
 import { navScrollListener } from '../helpers/navscroll'
+
 import NavBar from '../components/navbar'
 import Hero from '../components/hero'
 import Services from '../components/services'
+import AboutUs from '../components/about'
 
 class Home extends Component {
 	componentDidMount() {
@@ -32,17 +36,17 @@ class Home extends Component {
 						<Services />
 					</Element>
 
-					<Container>
-						<Element name="team"></Element>
+					<Element name="team">Team Content here...</Element>
 
-						<Element name="about"></Element>
+					<Element name="about">
+						<AboutUs />
+					</Element>
 
-						<Element name="features"></Element>
+					<Element name="features"></Element>
 
-						<Element name="testimonials"></Element>
+					<Element name="testimonials"></Element>
 
-						<Element name="pricing"></Element>
-					</Container>
+					<Element name="pricing"></Element>
 				</ContentWrapper>
 			</Fragment>
 		)
