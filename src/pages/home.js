@@ -10,6 +10,7 @@ import NavBar from '../components/navbar'
 import Hero from '../components/hero'
 import Services from '../components/services'
 import AboutUs from '../components/about'
+import Features from '../components/features'
 
 class Home extends Component {
 	componentDidMount() {
@@ -42,7 +43,9 @@ class Home extends Component {
 						<AboutUs />
 					</Element>
 
-					<Element name="features"></Element>
+					<Element name="features">
+						<Features />
+					</Element>
 
 					<Element name="testimonials"></Element>
 

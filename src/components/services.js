@@ -52,7 +52,7 @@ const ServiceColumn = styled(Column)`
 	user-select: none;
 
 	${sm} {
-		padding-top: 32px;
+		padding-top: 40px;
 	}
 `
 
