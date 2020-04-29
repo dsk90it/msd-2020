@@ -22,8 +22,8 @@ export const Button = styled.button`
 	display: inline-block;
 	color: ${theme.white};
 	background-color: ${theme.blueLight};
-	font-size: 12px;
-	font-weight: ${theme.semiBold};
+	font-size: 11px;
+	font-weight: ${theme.bold};
 	text-transform: ${theme.textUppercase};
 	margin-bottom: 0;
 	text-align: center;
@@ -35,11 +35,11 @@ export const Button = styled.button`
 	border-radius: 20px;
 	user-select: none;
 	cursor: pointer;
-	padding: 14px 16px;
+	padding: 14px 20px 15px;
 	transition: all 0.2s;
 	line-height: 1;
 	outline: 0 none;
-	letter-spacing: 0.3px;
+	letter-spacing: 0.25px;
 
 	:hover {
 		background-color: #9fb5c7;

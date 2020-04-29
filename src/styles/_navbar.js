@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { theme, Container, listUnstyled, xs, sm } from './_theme'
+import { theme, Container, listUnstyled, xs, sm, md } from './_theme'
 
 const darkNavbar = `
 	background-color: ${theme.secondary};
@@ -91,6 +91,12 @@ export const NavWrapper = styled.nav`
 				border-bottom: 2px solid transparent;
 				cursor: pointer;
 
+				${md} {
+					:hover:not(.active) {
+						color: ${theme.secondary};
+					}
+				}
+
 				&.active {
 					color: ${theme.white};
 
@@ -140,12 +146,18 @@ export const NavWrapper = styled.nav`
 	&.fixed {
 		${darkNavbar}
 
-		${sm} {
-			li {
-				a {
+		li {
+			a {
+				${sm} {
 					&.active {
 						color: ${theme.white};
 						border-bottom-color: ${theme.white};
+					}
+				}
+
+				${md} {
+					:hover:not(.active) {
+						color: ${theme.white};
 					}
 				}
 			}

@@ -38,6 +38,12 @@ const GlobalStyle = createGlobalStyle`
    .text-center{
       text-align: center;
    }
+   .regular{
+      font-weight: ${theme.regular};
+   }
+   .pull-right{
+      float: right;
+   }
 `
 
 export default GlobalStyle

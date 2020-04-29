@@ -1,0 +1,18 @@
+.popup {
+	border-radius: 8px;
+	max-width: 400px;
+	padding: 24px;
+}
+.popup h2 {
+	color: #3c4357;
+	margin-top: 0;
+}
+.popup .react-responsive-modal-closeButton {
+	outline: 0 none;
+	top: 16px;
+	right: 16px;
+}
+.popup .react-responsive-modal-closeButton svg {
+	width: 24px;
+	opacity: 0.6;
+}

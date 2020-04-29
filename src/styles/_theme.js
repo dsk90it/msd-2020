@@ -78,8 +78,13 @@ export const ContentWrapper = styled.div`
 
 // TYPOGRAPHY
 export const MainHeading = styled.h1`
-	font-size: 24px;
+	font-size: 30px;
 	color: ${theme.secondary};
-	font-weight: ${theme.semiBold};
+	line-height: 40px;
 	margin: 0 0 24px;
+
+	${sm} {
+		font-size: 32px;
+		line-height: 48px;
+	}
 `

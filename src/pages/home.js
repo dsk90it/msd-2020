@@ -1,14 +1,8 @@
 import React, { Component, Fragment } from 'react'
 import { Element } from 'react-scroll'
-
-// Styles
 import GlobalStyle from '../styles/_globals'
 import { ContentWrapper, Container } from '../styles/_theme'
-
-// Helpers
 import { navScrollListener } from '../helpers/navScroll'
-
-// Components
 import NavBar from '../components/navbar'
 import Hero from '../components/hero'
 
