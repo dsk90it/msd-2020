@@ -7,7 +7,7 @@ const Section = styled.section`
 	${clearFix};
 	width: 100%;
 	background-color: ${(props) => props.hasBgColor || null};
-	padding: 90px 0;
+	padding: 70px 0;
 
 	${lg} {
 		padding: 130px 0;

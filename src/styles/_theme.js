@@ -41,6 +41,7 @@ export const theme = {
 	baseColor: '#718493',
 	secondary: '#3c4357',
 	blue: '#6679c9',
+	blueMedium: '#eceff0',
 	blueLight: '#bcccd9',
 	white: '#ffffff',
 

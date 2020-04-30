@@ -3,7 +3,7 @@ import { sm } from './_theme'
 
 export const MainHeading = styled.h1`
 	font-size: 30px;
-	line-height: 40px;
+	line-height: 38px;
 	margin: 0 0 24px;
 	font-weight: ${(props) => props.weight || null};
 	color: ${(props) => props.txtcolor || null};
@@ -15,7 +15,7 @@ export const MainHeading = styled.h1`
 `
 export const SubHeading = styled.h2`
 	font-size: 26px;
-	line-height: 40px;
+	line-height: 38px;
 	margin: ${(props) => props.margin || '0 0 16px'};
 	color: ${(props) => props.txtcolor || null};
 	font-weight: ${(props) => props.weight || null};

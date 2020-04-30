@@ -11,6 +11,7 @@ import Hero from '../components/hero'
 import Services from '../components/services'
 import AboutUs from '../components/about'
 import Features from '../components/features'
+import Testimonials from '../components/testimonials'
 
 class Home extends Component {
 	componentDidMount() {
@@ -47,7 +48,9 @@ class Home extends Component {
 						<Features />
 					</Element>
 
-					<Element name="testimonials"></Element>
+					<Element name="testimonials">
+						<Testimonials />
+					</Element>
 
 					<Element name="pricing"></Element>
 				</ContentWrapper>
