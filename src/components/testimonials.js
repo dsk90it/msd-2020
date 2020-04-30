@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { clearFix, theme, Container, lg, iconSprites } from '../styles/_theme'
-import { MainHeading, SubHeading } from '../styles/_typography'
+import { SubHeading } from '../styles/_typography'
 
 const TestimonialContainer = styled.section`
 	${clearFix};
