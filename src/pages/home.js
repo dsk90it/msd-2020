@@ -38,7 +38,11 @@ class Home extends Component {
 						<Services />
 					</Element>
 
-					<Element name="team">Team Content here...</Element>
+					<Element name="team">
+						<div style={{padding: '15rem 0', backgroundColor: '#eceff0', textAlign: 'center' }}>
+							<h3>TEAM SECTION</h3>
+						</div>
+					</Element>
 
 					<Element name="about">
 						<AboutUs />
@@ -52,7 +56,11 @@ class Home extends Component {
 						<Testimonials />
 					</Element>
 
-					<Element name="pricing"></Element>
+					<Element name="pricing">
+						<div style={{padding: '15rem 0', backgroundColor: '#3c4357', textAlign: 'center'}}>
+							<h3 style={{color: '#ffffff'}}>PRICING SECTION</h3>
+						</div>
+					</Element>
 				</ContentWrapper>
 			</Fragment>
 		)

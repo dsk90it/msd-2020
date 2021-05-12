@@ -10,7 +10,7 @@ const TestimonialContainer = styled.section`
 	padding: 70px 0;
 
 	${lg} {
-		padding: 70px 0 40px;
+		padding: 70px 0 90px;
 	}
 `
 const FeaturedTestimonial = styled.div`
