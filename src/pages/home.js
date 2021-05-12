@@ -4,7 +4,7 @@ import { Element } from 'react-scroll'
 import GlobalStyle from '../styles/_globals'
 import { ContentWrapper } from '../styles/_theme'
 
-import { navScrollListener } from '../helpers/navscroll'
+import { navScrollListener } from '../helpers/navScroll'
 
 import NavBar from '../components/navbar'
 import Hero from '../components/hero'
